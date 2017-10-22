@@ -1,0 +1,15 @@
+{
+   "FACEBOOK": {
+    "VERIFY_TOKEN": "process.env.VERIFY_TOKEN",
+    "PAGE_ACCESS_TOKEN": "process.env.PAGE_ACCESS_TOKEN",
+    "API_URI": "process.env.API_URI"
+  },
+  "API": {
+    "URI": "process.env.API_URI",
+    "PORT": "process.env.PORT"
+  },
+  "SERVER": {
+    "URI": "process.env.SERVER_URI",
+    "PORT": "process.env.PORT"
+  }
+}
