@@ -169,14 +169,14 @@ class Facebook {
 
     if (messageText) {
       switch(messageText) {
-        case 'show categories':
-          sendMessageCategories(this.id);
-          break;
-        case 'help me':
-          sendMessageHelp(this.id);
-          break;
-        default:
-          sendMessageText(this.id);
+      case 'show categories':
+        sendMessageCategories(this.id);
+        break;
+      case 'help me':
+        sendMessageHelp(this.id);
+        break;
+      default:
+        sendMessageText(this.id);
       }
     } else if (messageAttachments) {
       console.log('called attachment');
