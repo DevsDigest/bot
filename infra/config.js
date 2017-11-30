@@ -22,8 +22,8 @@ const config = {
     port: envVars.SERVER_PORT
   },
   facebook: {
-    fbToken: envVars.FACEBOOK_VERIFY_TOKEN,
-    fbPageAccess: envVars.FACEBOOK_PAGE_ACCESS
+    token: envVars.FACEBOOK_VERIFY_TOKEN,
+    pageAccess: envVars.FACEBOOK_PAGE_ACCESS
   }
 };
 

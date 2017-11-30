@@ -2,10 +2,10 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const config = require('./config');
+const config = require('./infra/config');
 const app = express();
 
-app.set('port', (config.SERVER.PORT));
+app.set('port', (config.server.port));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
