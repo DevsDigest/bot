@@ -2,9 +2,9 @@
 
 const joi = require('joi');
 const schema = joi.object({
-  API_URI: joi.string(),
-  FACEBOOK_VERIFY_TOKEN: joi.string().required(),
-  FACEBOOK_PAGE_ACCESS: joi.string().required()
+  API_URI: joi.string().default('http://localhost:5000/v1'),
+  FACEBOOK_VERIFY_TOKEN: joi.string(),
+  FACEBOOK_PAGE_ACCESS: joi.string()
 }).unknown().required();
 
 const { error, value: envVars } = joi.validate(process.env, schema);
