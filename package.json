@@ -23,6 +23,7 @@
   "author": "Tiago Celestino",
   "license": "MIT",
   "dependencies": {
+    "axios": "0.17.1",
     "bootbot": "1.0.14",
     "joi": "13.0.2"
   },
