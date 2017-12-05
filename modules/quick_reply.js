@@ -1,4 +1,5 @@
 'use strict';
+
 const axios = require('axios');
 const config = require('../infra/config');
 
@@ -23,6 +24,9 @@ module.exports = (bot) => {
               type: 'web_url',
               url: post.url,
               title: 'Read post'
+            },
+            {
+              type: 'element_share'
             }
           ]
         };
