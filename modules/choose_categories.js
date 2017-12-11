@@ -9,12 +9,7 @@ function chatSay(chat) {
   });
 }
 
-module.exports = (bot) => {
-
-  bot.on('postback:PERSISTENT_MENU_CATEGORIES', (payload, chat) => {
-    chatSay(chat);
-  });
-  
+module.exports = (bot) => { 
   bot.hear(['show categories'], (payload, chat) => {
     chatSay(chat);
   });

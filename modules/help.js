@@ -19,7 +19,6 @@ module.exports = (bot) => {
   });
 
   bot.on('postback:PERSISTENT_MENU_HELP', (payload, chat) => {
-    console.log('foo');
     helpList(chat);
   });
 };
