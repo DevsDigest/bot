@@ -1,8 +1,10 @@
 'use strict';
 
+require('dotenv').load();
+
 const joi = require('joi');
 const schema = joi.object({
-  API_URI: joi.string().default('http://localhost:5000/v1'),
+  API_URI: joi.string(),
   FACEBOOK_VERIFY_TOKEN: joi.string(),
   FACEBOOK_PAGE_ACCESS: joi.string(),
   FACEBOOK_APP_SECRET: joi.string()

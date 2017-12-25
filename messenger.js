@@ -1,4 +1,6 @@
 'use strict';
+
+const config = require('./infra/config');
 const Bootbot = require('bootbot');
 const categories = require('./categories');
 const persistenMenu = require('./modules/persisten_menu');
@@ -7,9 +9,9 @@ const quickReplies = require('./modules/quick_reply');
 const help = require('./modules/help');
 
 const bot = new Bootbot({
-  accessToken: '',
-  verifyToken: '',
-  appSecret: ''
+  accessToken: config.facebook.pageAccess,
+  verifyToken: config.facebook.token,
+  appSecret: config.facebook.appSecret
 });
 
 bot.setGreetingText('Hey there! Welcome to Devs Digest Bot!');
