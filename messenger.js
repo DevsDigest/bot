@@ -30,4 +30,4 @@ bot.module(chooseCategories);
 bot.module(quickReplies);
 bot.module(help);
 
-bot.start();
+bot.start({ port: process.env.PORT });
