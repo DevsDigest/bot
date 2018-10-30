@@ -23,12 +23,12 @@
   "author": "Tiago Celestino",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.17.1",
-    "bootbot": "1.0.14",
-    "dotenv": "4.0.0",
-    "joi": "13.0.2"
+    "axios": "0.18.0",
+    "bootbot": "1.0.16",
+    "dotenv": "6.1.0",
+    "joi": "14.0.2"
   },
   "devDependencies": {
-    "nodemon": "1.12.5"
+    "nodemon": "1.18.5"
   }
 }
